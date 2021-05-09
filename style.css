@@ -81,8 +81,9 @@ padding-bottom: 300px;
 word-spacing: -3px;
 font-size: 20px;
 text-align: center !important;
-padding-left: 320px;
+padding-left: 300px;
 color: #f1f1f1;
+font-weight: 700 !important;
 width: auto;
 display: inline-block;
 overflow: hidden;
@@ -90,7 +91,7 @@ border-right: .15em solid white;
 white-space: nowrap;
 margin: 0 auto;
 letter-spacing: .15em;
-animation: typing 3.5s steps(100, end),
+animation: typing 5s steps(100, end),
 			 blink-caret .75s step-end infinite;
 }
 
@@ -104,12 +105,35 @@ animation: typing 3.5s steps(100, end),
   50% {border-color: #0492c2}
 }
 
-/*media Queries*
 
-@media screen and (max-width: 700px
-  .first h1 {
-    width: 1%;
-  }) 
+
+/*media Queries*/
+@media screen and (max-width: 500px) {
+    .first p {
+word-spacing: -3px;
+font-size: 10px;
+text-align: center !important;
+padding-left: 0px;
+color: #f1f1f1;
+font-weight: 700 !important;
+width: auto;
+display: inline-block;
+overflow: hidden;
+border-right: .15em solid white;
+white-space: nowrap;
+margin: 0 auto;
+letter-spacing: .15em;
+animation: typing 5s steps(100, end),
+			 blink-caret .75s step-end infinite;
+}
+
+@keyframes typing{
+  from {max-width: 0}
+  to {max-width: 100%}
+}
+
+@keyframes blink-caret{
+  from, to {border-color: transparent}
+  50% {border-color: #0492c2}
 }
 }
-  
