@@ -1,140 +1,115 @@
-.sidenav {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #0492c2;
-    overflow-x: hidden;
-    padding-top: 20px;
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
 }
 
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #f1f1f1;
-    display: block;
-    margin-left: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
-.sidenav a:hover {
-    color: white;
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
 }
 
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
 }
 
-.sidenav img{
-border-radius: 100px;
-width: 150px;
-height: 150px;
-margin-left: 45px;
-margin-bottom: 80px;
-}
-
-.home{
+/* OUR CSS */
+#main{
 background-image: url(./images/spanner.jpg);
-background-size: cover;
-background-repeat: no-repeat;
 background-position: center;
-color: #f1f1f1;
-}
-
-.home h1 {
-text-align: center;
-font-weight: 900;
-font-size: 50px;
-padding-top: 250px;
-padding-left: 250px;
-font-family: Helvetica, sans-serif;
-letter-spacing: -2px;
-}
-
-.home h3 {
-font-weight: bold;
-letter-spacing: -3px;
-text-align: center;
+background-size: cover;
 padding-bottom: 300px;
-padding-left: 250px;
-word-spacing: 2px;
+}
+.first h1 {
+    text-align: center;
+    padding-top: 200px;
+    font-size: 50px;
+    font-weight: 900;
+    color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.services {
-text-align: center;
+.first p {
+word-spacing: -3px;
 font-size: 20px;
-font-weight: 500;
-padding-top: 25px;
-padding-left: 250px;
-padding-bottom: 150px;
-background-color: #52b2bf;
+text-align: center !important;
+padding-left: 320px;
+color: #f1f1f1;
+width: auto;
+display: inline-block;
+overflow: hidden;
+border-right: .15em solid white;
+white-space: nowrap;
+margin: 0 auto;
+letter-spacing: .15em;
+animation: typing 3.5s steps(100, end),
+			 blink-caret .75s step-end infinite;
 }
 
-.about {
-text-align: center;
-font-size: 20px;
-font-weight: 500;
-padding-top: 25px;
-padding-left: 250px;
-padding-bottom: 150px;
-background-color: whitesmoke;
-}
-.about img {
-border-style: solid;
-border-radius: 100px;
-border-color: #0492c2;
+@keyframes typing{
+  from {max-width: 0}
+  to {max-width: 100%}
 }
 
-.contact {
-text-align: cennter;
-font-size: 20px;
-font-weight: 500;
-padding-top: 25px;
-padding-left: 250px;
-padding-bottom: 150px;
-background-color: gray;
-color: white;
+@keyframes blink-caret{
+  from, to {border-color: transparent}
+  50% {border-color: #0492c2}
 }
 
-/* icons css */
-.icons {
-padding-left: 30px; 
-padding-top: 80px;
-color: white;
+/*media Queries*
+
+@media screen and (max-width: 700px
+  .first h1 {
+    width: 1%;
+  }) 
 }
-
-/* media query */
-
-@media screen and (max-width:735px){
-    .sidenav {
-        width: 30%;
-    }
-    .sidenav img {
-        margin-left: 25px;
-    }
-   .home {
-       width: auto;
-       background-image: url(./images/spanner.jpg);
-       background-size: cover;
-       background-position: center;
-    }
-    .home h1 {
-        width: 10%;
-        text-align: center;
-        font-size: 30px;
-        font-weight: 900;
-    }   
-    .home h3 {
-        width: auto;
-        text-align: center;
-        font-size: 15px;
-        word-spacing: 5px;
-        letter-spacing: 1px;
-    }
-} 
-
-
+}
+  

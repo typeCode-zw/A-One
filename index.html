@@ -32,154 +32,22 @@
     />
   </head>
   <body>
-  <!-- sidebar -->
-<div class="sidenav">
-<img src="./images/LOGO.jpg" alt="A-One Logo" srcset="">
-<br>
-  <a href="#home">Home</a>
-  <a href="#aone">A-One</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-  <div class="icons">
-  <i class="fab fa-whatsapp-square fa-3x"></i>
-  <i class="fab fa-facebook-square fa-3x ml-3"></i>
-  <i class="fab fa-twitter-square fa-3x ml-3"></i>
+ <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">A-One</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+  <div class="first">
+  <h1>A-ONE GEARBOXES</h1>
+  <p id="typing">THE FIRST IN MANUAL TRANSMISSIONS AND DRIVETRAINS</p>
   </div>
-  <p style="font-family: 15px; color:white; padding-top: 10px; padding-left: 12px; font-weight: bold; font-family: sans-serif;">A-ONE GEARBOXES &copy; 2021</p>
-</div>
-
-<!-- main content -->
-<div class="container-fluid home" id="home">
-<h1>A-ONE GEARBOXES</h1>
-<h3>FIRST IN MANUAL TRANSMISSIONS AND DRIVETRAINS</h3>
-</div>
-<div class="services" id="aone">
-<h3 style="text-decoration: underline; font-weight: bolder;color:white;">Products and Services</h3>
-<br>
-<p style="color: white;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint sequi placeat quis! Iste nisi perferendis esse tempora numquam est error?</p>
-
-    <div class="container mt-5 flex-grow-1">
-      <div class="row pt-3">
-        <div class="col-12 col-md-6 col-lg-6 mb-2 w-70 web-card">
-          <div class="card w-100 mx-auto back" style="width: 18rem">
-            <img class="card-img-top" src="./images/stuff.jpg" alt="services" />
-            <div class="card-body">
-              <h5 class="card-title" style="font-weight: bolder; font-size: 30px;">Services</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione rem quia commodi earum repellendus ipsam dolor dolores consequuntur, asperiores fugiat ad nostrum iusto deleniti suscipit omnis maiores cupiditate excepturi alias labore facere. Ad, harum quaerat!
-                            
-              </p>
-              <a href="#contact" class="btn btn-primary button">Get a Quote</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6 mb-2 w-70">
-          <div class="card w-100 mx-auto back" style="width: 18rem">
-            <img class="card-img-top" src="./images/items.jpg" alt="item" />
-            <div class="card-body">
-              <h5 class="card-title" style="font-weight: bolder; font-size: 30px;">Products</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem deserunt earum veritatis sint quaerat exercitationem inventore, recusandae iusto rem, aperiam explicabo ipsum blanditiis? Sint amet suscipit est nam repellendus natus alias similique. Sit, laborum culpa.
-                
-              </p>
-              <a href="./products.html" class="btn btn-primary button">Browse Products</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-<hr>
-<div class="about" id="about">
-<h4 style="font-size: 25px; font-weight: bolder; text-decoration: underline;">About Us</h4>
-<br>
-<img src="./images/LOGO.jpg" alt="A-One Logo">
-<br>
-<br>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt vero nobis iure omnis aut natus aliquid praesentium veniam labore laudantium voluptatum consequuntur tempora, nemo ab ullam exercitationem odio, sed eaque nisi. Error temporibus explicabo quis velit a quod provident, aspernatur deleniti optio corporis, tempora distinctio expedita quam enim doloribus recusandae.</p>
-<br>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde molestiae maiores autem quos iusto provident, qui adipisci dolores id, beatae dolor nisi officiis distinctio eveniet? Facilis illum consequuntur ipsa vel? Ut animi corporis autem. Culpa!</p>
-
-</div>
-<hr>
-<div class="contact" id="contact">
-<h3 style="font-size: 25px; font-weight: bold; text-decoration: underline;">Get in Touch!</h3>
-<br>
-<br>
- <div class="container">
-  <div class="row col-12 ml-5 icons">
-    <div class="col-md-3">
-     <i class="fa fa-envelope-square fa-2x"></i>
-     <p class="paragraph"><strong>Email Us:</strong> <em>raymond@a1gearboxes.co.zw</em></p>
-    </div>
-    <div class="col-md-1 mr-4">
-    </div>
-    <div class="col-lg-3">
-      <i class="fa fa-phone-square fa-2x"></i>
-     <p class="paragraph"><strong>Call Us:</strong> <em>+263774470574</em></p>
-    </div>
-     <div class="col-lg-1 mr-2"></div>
-    <div class="col-md-3">
-      <i class="fab fa-whatsapp-square fa-2x"></i>
-     <p class="paragraph"><strong>Whatsapp:</strong><em>+263778895779</em></p>
-    </div>
-   <div class="col-lg-1 ml-1"></div>
-</div>
-<br>
-<div class="container">
-  <div class="row row-cols-3 ml-5 mt-5 pl-5 icons">
-    <div class=" col-12 col-sm-5">
-    <i class="fa fa-map-marker-alt fa-2x"></i>
-     <p class="paragraph"><strong>Address: </strong><em>Plot FF3, Finneran RD, Ardbennie</em></p>
-     </div>
-
-     <div class="col-12 col-sm-2"></div>
-
-    <div class="col-12 col-sm-5">
-    <i class="fa fa-clock fa-2x"></i>
-     <p class="paragraph"><strong>Work Hours:</strong><em> Mon-Fri | 09:00-16:00</em></p>
-     </div>
   </div>
-</div>
-<hr>
-<div class="container-form">
-<br>
-<h4 class="leave-msg">Leave a Message</h4> <br>
-
-  <div class=" form col-sm-12 col-sm-4">
-<form
-  action="https://formspree.io/f/xwkwanar"
-  method="POST"
->
-  <label>
-    Name:
-    <input type="text" name="_replyto">
-  </label>
-  <label>
-    Company:
-    <input type="text" name="_replyto">
-  </label>
-  <br>
-  <br>
-  <label>
-    Your email:
-    <input type="text" name="_replyto">
-  </label>
- 
-  <label>
-    Message:
-    <textarea name="message"></textarea>
-  </label>
-
-  <!-- your other form fields go here -->
-
-<button type="submit">Send</button>
-</form>
-</div>
- </div>
-
-</div>
-
+ <script src="script.js"></script>
     <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js "></script>
