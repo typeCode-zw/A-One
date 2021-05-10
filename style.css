@@ -16,7 +16,7 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #f1f1f1;
   display: block;
   transition: 0.3s;
 }
@@ -104,17 +104,33 @@ animation: typing 5s steps(100, end),
   from, to {border-color: transparent}
   50% {border-color: #0492c2}
 }
+#mySidebar img{
+border-radius: 100px;
+width: 150px;
+height: 150px;
+margin-left: 45px;
+margin-bottom: 40px;
+}
 
+.icons {
+padding-left: 30px; 
+padding-top: 80px;
+color: white;
+}
+
+#a-one {
+background-color: #0492c2;
+}
 
 
 /*media Queries*/
 @media screen and (max-width: 500px) {
-    .first p {
+ .first .media {
 word-spacing: -3px;
 font-size: 10px;
-text-align: center !important;
-padding-left: 0px;
-margin-right: 15px;
+text-align: left !important;
+padding-right: 15px !important;
+margin-right: 0px;
 color: #f1f1f1;
 font-weight: 700 !important;
 width: auto;
@@ -123,18 +139,13 @@ overflow: hidden;
 border-right: .15em solid white;
 white-space: nowrap;
 margin: 0 auto;
-letter-spacing: .15em;
-animation: typing 5s steps(100, end),
-			 blink-caret .75s step-end infinite;
-}
 
-@keyframes typing{
-  from {max-width: 0}
-  to {max-width: 100%}
-}
+  }
 
-@keyframes blink-caret{
-  from, to {border-color: transparent}
-  50% {border-color: #0492c2}
+.img {
+  width: auto;
+}
+.first .aone {
+  font-size: 30px;
 }
 }
