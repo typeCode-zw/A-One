@@ -234,21 +234,20 @@ color: white;
 }
 
 /*media Queries*/
-
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-
+@media screen and (max-width: 450px) {
  .about img {
  width: 320px;
  }
 }
-@media screen and (max-height: 320px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
 
+@media screen and (max-width: 450px) {
  .about img {
- width: 250px;
- height: 250px;
+ width: 320px;
+ }
+}
+@media screen and (max-width: 320px) {
+ .about img {
+ width: 300px;
+ height: auto;
  }
 }
