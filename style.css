@@ -97,13 +97,14 @@ animation: typing 5s steps(100, end),
 
 @keyframes typing{
   from {max-width: 0}
-  to {max-width: 100%}
+  to {max-width: 90%}
 }
 
 @keyframes blink-caret{
   from, to {border-color: transparent}
   50% {border-color: #0492c2}
 }
+
 #mySidebar img{
 border-radius: 100px;
 width: 150px;
@@ -118,34 +119,136 @@ padding-top: 80px;
 color: white;
 }
 
-#a-one {
-background-color: #0492c2;
+.services {
+text-align: center;
+font-size: 20px;
+font-weight: 500;
+padding-top: 25px;
+padding-bottom: 150px;
+background-color: #52b2bf;
+}
+.about {
+text-align: center;
+font-size: 20px;
+font-weight: 500;
+padding-top: 25px;
+padding-bottom: 150px;
+background-color: whitesmoke;
+}
+.about img {
+border-style: solid;
+border-radius: 100px;
+border-color: #0492c2;
 }
 
+.contact {
+text-align: center;
+font-size: 20px;
+font-weight: 500;
+padding-top: 25px;
+background-color: gray;
+color: white;
+}
+.intro-copy {
+  padding: 1em;
+  margin: 50vh auto;
+  max-width: 15em;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 2em;
+  line-height: 1.2;
+  text-align: center;
+}
 
-/*media Queries*/
-@media screen and (max-width: 500px) {
- .first .media {
-word-spacing: -3px;
-font-size: 10px;
-text-align: left !important;
-padding-right: 15px !important;
-margin-right: 0px;
-color: #f1f1f1;
-font-weight: 700 !important;
-width: auto;
-display: inline-block;
-overflow: hidden;
-border-right: .15em solid white;
-white-space: nowrap;
-margin: 0 auto;
-
+.top-link {
+  transition: all .25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+  
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3em 3em 0;
+  border-radius: 50%;
+  padding: .25em;
+  width: 40px;
+  height: 40px;
+  background-color: #F8F8F8;
+  
+  &.show {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  &.hide {
+    visibility: hidden;
+    opacity: 0;
   }
 
-.img {
-  width: auto;
+  svg {
+    fill: #000;
+    width: 5px;
+    height: 5px;
+  }
+
+  &:hover {
+    background-color: #E8E8E8;
+
+    svg {
+      fill: #000000;
+    }
+  }
 }
-.first .aone {
-  font-size: 30px;
+
+// Text meant only for screen readers.
+.screen-reader-text {
+  position: absolute;
+  clip-path: inset(50%);
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  word-wrap: normal !important;
+  clip: rect(1px, 1px, 1px, 1px);
+
+  &:focus {
+    display: block;
+    top: 5px;
+    left: 5px;
+    z-index: 100000; // Above WP toolbar
+    clip-path: none;
+    background-color: #eee;
+    padding: 15px 23px 14px;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    line-height: normal;
+    color: #444;
+    font-size: 1em;
+    clip: auto !important;
+  }
 }
+
+/*media Queries*/
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+
+ .about img {
+ width: 320px;
+ }
+}
+@media screen and (max-height: 320px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+
+ .about img {
+ width: 250px;
+ height: 250px;
+ }
 }
