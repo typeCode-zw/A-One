@@ -240,3 +240,10 @@ animation: none;
 100% { background-color: #111; }
 }
   
+/* media query */
+@media screen and (max-width: 500px) {
+ .about img {
+ width: 320px;
+ height: 320px;
+ }
+}
