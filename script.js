@@ -50,3 +50,22 @@ scrollToTopButton.onclick = function(e) {
   scrollToTop();
 }
 
+// typing effect 
+const typedTextSpan = document.querySelector(".typed-text");
+
+const textArray = ["MANUAL TRANSMISSIONS AND DRIVETRAINS"];
+const typingDelay = 100;
+const erasingDelay = 100;
+const newTextDelay = 2000;
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+if(charIndex < textArray[textArrayIndex].length) {
+typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+charIndex++;
+setTimeout(type, typingDelay);
+}
+}
+
+type();
